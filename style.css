@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+}
+
+.container-content {
+  font-size: 10px;
+  padding: 50px 0 50px 0;
+}
+
+.subContainer {
+  padding: 50px 30px 50px 30px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.subContainer h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 30px;
+}
+
+.subContainer p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.subContainer button {
+  border-radius: 25px;
+  border-color: hsla(0, 0%, 100%, 0.75);
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+}
+
+.firstContainer {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.firstContainer button p {
+  color: hsl(31, 77%, 52%);
+  font-weight: bolder;
+}
+
+.secondContainer {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.secondContainer button p {
+  color: hsl(184, 100%, 22%);
+  font-weight: bolder;
+}
+
+.thirdContainer {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.thirdContainer button p {
+  color: hsl(179, 100%, 13%);
+  font-weight: bolder;
+}
+
+@media only screen and (min-width: 500px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 800px;
+  }
+
+  .container-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 350px;
+    padding: 0;
+  }
+}
